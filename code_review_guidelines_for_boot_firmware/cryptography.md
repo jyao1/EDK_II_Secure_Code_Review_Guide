@@ -35,6 +35,8 @@ Cryptography is also an indicator we need to consider when we design a proper so
 
 **Previous Vulnerabilities:**
 
+In [BlackHat 2007](https://www.blackhat.com/presentations/bh-usa-07/Heasman/Presentation/bh-usa-07-heasman.pdf), Heasman disclosed the PCI Option ROM rootkit, when UEFI secure boot is not avaiable yet.
+
 In [BlackHat 2009](https://www.blackhat.com/presentations/bh-usa-09/CHEN/BHUSA09-Chen-RevAppleFirm-SLIDES.pdf), Chen demonstrated how to add a rootkit to Apple Keyboard firmware via a firmware update.
 
 In [2010](https://media.ccc.de/v/27c3-4174-en-the_hidden_nemesis/related), Weinmann demonstrated how to add a rootkit to ThinkPad embedded controller (EC) firmware via update.
