@@ -345,6 +345,64 @@ return 0;
 
 To avoid similar issues, network packet processing code should always be carefully reviewed.
 
+### Network for BMC {#network-for-bmc}
+
+In [SSTIC 2018](https://www.sstic.org/media/SSTIC2018/SSTIC-actes/subverting_your_server_through_its_bmc_the_hpe_ilo/SSTIC2018-Slides-subverting_your_server_through_its_bmc_the_hpe_ilo4_case-gazet_perigaud_czarny.pdf), [BlackHat 2018](http://i.blackhat.com/us-18/Wed-August-8/us-18-Waisman-Soler-The-Unbearable-Lightness-of-BMC.pdf), researchers disclosed multiple security issues in baseboard management controller, or BMC.
+
+One issue is sscanf(). This is unsafe function and causes buffer overflow.
+
+```
+else if (!strnicmp (request, http_header, "Connection :", 0xBu))
+{
+  sscanf (http_header, "%*s %s", https_connection->connection);
+}
+
+struct https_connection {
+  ...
+  0x0C : char connection [0x10];
+  ...
+  0x28 : char localConnection;
+  ...
+  0xB8 : void * vtable;
+}
+```
+
+The banned function is dangerous and must not be used.
+
+The other buffer overflow issue is triggered before the signature verification. As such, the signature verification can be bypassed.
 
 
+```
+char line_local [1024];
+while (1) {
+  if ( !readline(dlobj, line_local) ) /* HERE */
+    return 0xB;
+  if ( !strcmp(line_local , "--=</End HP Signed File Fingerprint\\>=--") )
+    break;
+  key = split(line_local , ":");
+  if ( !key ) return 1;
+  if ( !strcmp(key, "Hash") )
+    some_stuff();
+  else if ( !strcmp(key, "Signature") )
+    some_other_stuff();
+}
+
+int readline(DOWNLOADER *dlobj , char *line_out)
+{
+  char *ptr;
+  int line_size;
+  ptr = strtok(dlobj ->buffer_read , "\r\n");
+  if ( ptr )
+  {
+    line_size = ptr - dlobj ->buffer_read;
+    if ( line_out )
+    {
+      memcpy(line_out, dlobj->buffer_read, line_size); /* BAD */
+      line_out[line_size] = 0;
+    }
+  [...]
+}
+```
+
+To avoid such issues, the input data size must be carefully checked.
 

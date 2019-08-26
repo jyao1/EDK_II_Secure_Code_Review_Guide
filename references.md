@@ -77,6 +77,10 @@
 
 [Evdokimov BH 2017] Intel AMT Stealth Breakthrough,[https://](https://www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf)[www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf](https://www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf)
 
+[Perigaud SSTIC 2018] Backdooring your server through its BMC,[https://www.sstic.org/media/SSTIC2018/SSTIC-actes/subverting_your_server_through_its_bmc_the_hpe_ilo/SSTIC2018-Slides-subverting_your_server_through_its_bmc_the_hpe_ilo4_case-gazet_perigaud_czarny.pdf](https://www.sstic.org/media/SSTIC2018/SSTIC-actes/subverting_your_server_through_its_bmc_the_hpe_ilo/SSTIC2018-Slides-subverting_your_server_through_its_bmc_the_hpe_ilo4_case-gazet_perigaud_czarny.pdf)
+
+[Waisman BH 2018] The Unbearable Lightness of BMCs,[http://i.blackhat.com/us-18/Wed-August-8/us-18-Waisman-Soler-The-Unbearable-Lightness-of-BMC.pdf](http://i.blackhat.com/us-18/Wed-August-8/us-18-Waisman-Soler-The-Unbearable-Lightness-of-BMC.pdf)
+
 [Matrosov BH 2019 2] Breaking Through Another Side, [http://i.blackhat.com/USA-19/Thursday/us-19-Matrosov-Breaking-Through-Another-Side-Bypassing-Firmware-Security-Boundaries-From-Embedded-Controller.pdf](http://i.blackhat.com/USA-19/Thursday/us-19-Matrosov-Breaking-Through-Another-Side-Bypassing-Firmware-Security-Boundaries-From-Embedded-Controller.pdf)
 
 [SpeedRacer 2014] Speed Racer, [https://fahrplan.events.ccc.de/congress/2014/Fahrplan/system/attachments/2565/original/speed_racer_whitepaper.pdf](https://fahrplan.events.ccc.de/congress/2014/Fahrplan/system/attachments/2565/original/speed_racer_whitepaper.pdf)
@@ -136,6 +140,8 @@
 [Weinmann 2010] The hidden nemesis,[https://media.ccc.de/v/27c3-4174-en-the_hidden_nemesis/related](https://media.ccc.de/v/27c3-4174-en-the_hidden_nemesis/related)
 
 [Cui BH 2011] Print me if you dare,[https://academiccommons.columbia.edu/doi/10.7916/D8QJ7RG3](https://academiccommons.columbia.edu/doi/10.7916/D8QJ7RG3)
+
+[Perigaud ZeroNight 2018] Turning your BMC into a revolving door,[https://airbus-seclab.github.io/ilo/ZERONIGHTS2018-Slides-EN-Turning_your_BMC_into_a_revolving_door-perigaud-gazet-czarny.pdf](https://airbus-seclab.github.io/ilo/ZERONIGHTS2018-Slides-EN-Turning_your_BMC_into_a_revolving_door-perigaud-gazet-czarny.pdf)
 
 [Domas BH 2018] God Mode Unlocked Hardware Backdoors in X86 CPUs, http://i.blackhat.com/us-18/Thu-August-9/us-18-Domas-God-Mode-Unlocked-Hardware-Backdoors-In-x86-CPUs.pdf
 

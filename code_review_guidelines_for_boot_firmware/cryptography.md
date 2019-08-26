@@ -44,3 +44,40 @@ In [2010](https://media.ccc.de/v/27c3-4174-en-the_hidden_nemesis/related), Weinm
 In [2011](https://academiccommons.columbia.edu/doi/10.7916/D8QJ7RG3), Cui demonstrated how to add a rootkit to HP printer firmware via update.
 
 All of the cases above demonstrate the need for firmware locking and authenticated updates.
+
+In [ZeroNight 2018](https://airbus-seclab.github.io/ilo/ZERONIGHTS2018-Slides-EN-Turning_your_BMC_into_a_revolving_door-perigaud-gazet-czarny.pdf), researches disclosed broken logic in signature verification in BMC firmware.
+
+See below code. load_legacy_key expects 1 as index for public key and fails otherwise. load_signature returns with success code if load_legacy_key failed for index2. Signatures felds are left untouched. As such, the attacker may update sig1 feld with hash value calculated and bypass the signature verification.
+
+
+```
+load_signature()
+{
+  steps_mask = 0;
+  if ( load_legacy_key(hdr->index1 , &pkey , 0x804) )
+  {
+    steps_mask = 1;
+    if ( decrypt_hash(hdr->sig1 , &sig_size , hdr->sig1 , sig_size , &pkey) )
+      goto EXIT_FAILED;
+  }
+  if ( !load_legacy_key(hdr->index2 , &pkey , 0x804) )
+    goto FUCK_YEAH; // <------ !!! NO FFS !!!
+  steps = steps_mask | 2;
+
+  if ( decrypt_hash(hdr->sig2 , &sig_size , hdr->sig2 , sig_size , &pkey) )
+    goto EXIT_FAILED;
+
+  if ( steps == 2 )
+    memcpy(hdr->sig1 , sig2 , sig_size); // only sig2 , overwrite sig1
+
+  // two sigs ? ensure they match
+  if ( steps == 3 && memcmp(img_hdr_->sig1 , sig2 , sig_size) )
+EXIT_FAILED:
+    return ERROR;
+FUCK_YEAH:
+  return SUCCESS;
+}
+```
+
+
+Care must be taken to make sure the signature verification always happening, espcially for the legacy logic.
