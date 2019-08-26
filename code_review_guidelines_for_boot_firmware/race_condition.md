@@ -44,6 +44,10 @@ The typical example is the SMM communication buffer. If the check function verif
 
 To mitigate this, the communication buffer must be copied into SMRAM before it is checked.
 
+The other example is the Flash Update code. In [BlackHat 2019](http://i.blackhat.com/USA-19/Thursday/us-19-Matrosov-Breaking-Through-Another-Side-Bypassing-Firmware-Security-Boundaries-From-Embedded-Controller.pdf), a Thinkpad EC update driver issue is exposed. The signature check and verification are separated.
+
+To mitigate this, both verification and update must happen together in an isolated execution environment or before 3rd part code running.
+
 Another example is the motherboard flash content. When [Intel Boot Guard](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/security-technologies-4th-gen-core-retail-paper.pdf) is enabled, the Authenticated Code Module (ACM) loads Initial Boot Block (IBB) flash into cache and validates the cached copy. An attacker may use the flash programmer to update the IBB flash copy after it is loaded by ACM. This is a variation of a Time-of-Check/Time-of-Use attack.
 
 The IBB cache copy mechanism needs to ensure that no code or data in the IBB flash can be referenced.

@@ -77,6 +77,8 @@
 
 [Evdokimov BH 2017] Intel AMT Stealth Breakthrough,[https://](https://www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf)[www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf](https://www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf)
 
+[Matrosov BH 2019 2] Breaking Through Another Side, [http://i.blackhat.com/USA-19/Thursday/us-19-Matrosov-Breaking-Through-Another-Side-Bypassing-Firmware-Security-Boundaries-From-Embedded-Controller.pdf](http://i.blackhat.com/USA-19/Thursday/us-19-Matrosov-Breaking-Through-Another-Side-Bypassing-Firmware-Security-Boundaries-From-Embedded-Controller.pdf)
+
 [SpeedRacer 2014] Speed Racer, [https://fahrplan.events.ccc.de/congress/2014/Fahrplan/system/attachments/2565/original/speed_racer_whitepaper.pdf](https://fahrplan.events.ccc.de/congress/2014/Fahrplan/system/attachments/2565/original/speed_racer_whitepaper.pdf)
 
 [Rutkowska BH 2008] Preventing and Detecting Xen Hypervisor Subversions, [https://](https://invisiblethingslab.com/resources/bh08/part2-full.pdf)[invisiblethingslab.com/resources/bh08/part2-full.pdf](https://invisiblethingslab.com/resources/bh08/part2-full.pdf)

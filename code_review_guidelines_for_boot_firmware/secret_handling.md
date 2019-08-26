@@ -96,3 +96,28 @@ jz short loc_26FD
 The vendor should always change the default password or key for a device to prevent illegal access. Also, it is not a good idea to hardcode the key in the source code.
 
 Another example in TPM2, during boot, the platform should always send Tpm2HierarchyChangeAuth(TPM_RH_PLATFORM) command to a TPM2 device to prevent other code accessing the TPM2 platform hierarchy. The same action must be done in S3 resume too.
+
+
+### Static unlock password {#static-unlock-password}
+
+In [BlackHat 2019](http://i.blackhat.com/USA-19/Thursday/us-19-Matrosov-Breaking-Through-Another-Side-Bypassing-Firmware-Security-Boundaries-From-Embedded-Controller.pdf), Mastrov disclosed Thinkpad EC shared the secret sent from the BIOS.
+
+
+
+```
+op3 = 0x14;
+op2 = 0xA;
+op1 = 2;
+*buffer = 0x6065845A; // static unlock password
+buffer[4] = 0x47;
+buffer_size = 5;
+LOBYTE(res) = EcIoDxeInterface->CpuIoCmdWriteBufferEC1(
+               EcIoDxeInterface,
+               *&op1,
+               *&op2,
+               *&op3,
+               *&buffer_size,
+               buffer);
+```
+
+
