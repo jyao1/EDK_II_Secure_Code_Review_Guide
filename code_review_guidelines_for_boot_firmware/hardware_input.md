@@ -114,6 +114,10 @@ In [BlackHat 2013](https://media.blackhat.com/us-13/US-13-Sevinsky-Funderbolt-Ad
 
 DMA attacks can be mitigated by setting up the Input/Output Management Unit (IOMMU) to block DMA access to full system memory. In firmware, this can be achieved using the IOMMU or disabling the Peripheral Component Interconnection (PCI) Bus Master Enable (BME) bit. However, if an untrusted device driver requires PCI BME access, the IOMMU must be setup to accommodate the untrusted device.
 
+In [CanSecWest 2017](https://cansecwest.com/slides/2017/CSW2017_Cuauhtemoc-Rene_CPU_Hot-Add_flow.pdf), Intel disclosed a special attack for CPU hot-add process on server platform. The attacker uses DMA to tamper the code to be executed in the first SMI (at 0x3000:0x8000) by the newly-added CPU in order to perform SMBASE relocation.
+
+To mitigate this, BIOS leverages existing HW protection mechanism in Intel CPUs against rogue DMA engines: GENPROTRANGE register programming.
+
 ### USB {#usb}
 
 Because attackers can create devices with bad USB descriptors, USB data is considered untrusted. Projects like [Facedancer](http://goodfet.sourceforge.net/hardware/facedancer21/) are good examples of USB fuzzing tools. In [BlackHat 2014](https://www.blackhat.com/docs/eu-14/materials/eu-14-Schumilo-Dont-Trust-Your-USB-How-To-Find-Bugs-In-USB-Device-Drivers.pdf), a demo shows how to do fuzz for the USB device driver.

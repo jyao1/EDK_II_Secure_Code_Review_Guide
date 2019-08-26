@@ -93,6 +93,8 @@
 
 [Pcileech 2017] Attacking UEFI and Linux, [http://blog.frizk.net/2017/01/attacking-uefi-and-linux.html](http://blog.frizk.net/2017/01/attacking-uefi-and-linux.html)
 
+[Cuauhtemoc CSW 2017] Abusing CPU Hot-Add weaknesses to escalate privileges in Server Datacenters, [https://cansecwest.com/slides/2017/CSW2017_Cuauhtemoc-Rene_CPU_Hot-Add_flow.pdf](https://cansecwest.com/slides/2017/CSW2017_Cuauhtemoc-Rene_CPU_Hot-Add_flow.pdf)
+
 [Facedancer 2012] Facedancer, [http://goodfet.sourceforge.net/hardware/facedancer21/](http://goodfet.sourceforge.net/hardware/facedancer21/)
 
 [Schumilo BH 2014] Don’t trust your USB,[https://](https://www.blackhat.com/docs/eu-14/materials/eu-14-Schumilo-Dont-Trust-Your-USB-How-To-Find-Bugs-In-USB-Device-Drivers.pdf)[www.blackhat.com/docs/eu-14/materials/eu-14-Schumilo-Dont-Trust-Your-USB-How-To-Find-Bugs-In-USB-Device-Drivers.pdf](https://www.blackhat.com/docs/eu-14/materials/eu-14-Schumilo-Dont-Trust-Your-USB-How-To-Find-Bugs-In-USB-Device-Drivers.pdf)
