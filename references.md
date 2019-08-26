@@ -91,9 +91,13 @@
 
 [Sevinsky BH 2013] Funderbolt – Adventures in thunderbolt DMA attacks,[https://media.blackhat.com/us-13/US-13-Sevinsky-Funderbolt-Adventures-in-Thunderbolt-DMA-Attacks-Slides.pdf](https://media.blackhat.com/us-13/US-13-Sevinsky-Funderbolt-Adventures-in-Thunderbolt-DMA-Attacks-Slides.pdf)
 
+[Hudson 31c3 2015] Thunderstrike, [https://trmm.net/Thunderstrike_31c3](https://trmm.net/Thunderstrike_31c3)
+
+[Hudson BH 2015] Thunderstrike 2, [https://www.blackhat.com/docs/us-15/materials/us-15-Hudson-Thunderstrike-2-Sith-Strike.pdf](https://www.blackhat.com/docs/us-15/materials/us-15-Hudson-Thunderstrike-2-Sith-Strike.pdf)
+
 [Pcileech 2017] Attacking UEFI and Linux, [http://blog.frizk.net/2017/01/attacking-uefi-and-linux.html](http://blog.frizk.net/2017/01/attacking-uefi-and-linux.html)
 
-[Cuauhtemoc CSW 2017] Abusing CPU Hot-Add weaknesses to escalate privileges in Server Datacenters, [https://cansecwest.com/slides/2017/CSW2017_Cuauhtemoc-Rene_CPU_Hot-Add_flow.pdf](https://cansecwest.com/slides/2017/CSW2017_Cuauhtemoc-Rene_CPU_Hot-Add_flow.pdf)
+[Chavez-Corona CSW 2017] Abusing CPU Hot-Add weaknesses to escalate privileges in Server Datacenters, [https://cansecwest.com/slides/2017/CSW2017_Cuauhtemoc-Rene_CPU_Hot-Add_flow.pdf](https://cansecwest.com/slides/2017/CSW2017_Cuauhtemoc-Rene_CPU_Hot-Add_flow.pdf)
 
 [Facedancer 2012] Facedancer, [http://goodfet.sourceforge.net/hardware/facedancer21/](http://goodfet.sourceforge.net/hardware/facedancer21/)
 
