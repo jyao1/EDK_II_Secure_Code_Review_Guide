@@ -149,3 +149,13 @@ int tpm_get_random(u32 chip_num, u8 *out, size_t max) {
 
 
 As mitigation, the TPM driver must perform robust checks of the response buffer size.
+
+### Glitch {#glitch}
+
+In [BlackHat 2015](https://www.blackhat.com/docs/eu-15/materials/eu-15-Giller-Implementing-Electrical-Glitching-Attacks.pdf), NCC group demonstrated how to use glitch attack to break Xbox 360 bootloader security.
+
+In [BlackHat 2018](http://i.blackhat.com/us-18/Wed-August-8/us-18-Milburn-There-Will-Be-Glitches-Extracting-And-Analyzing-Automotive-Firmware-Efficiently.pdf), Riscure used glitch to inject fault to break the Electronic Control Unit (ECU) found in cars.
+
+To mitigate glitch attack, the possible hardware ways are: use memory integrity (e.g. ECC), remove debug interface. The possible software ways are: add redundancy (duplicated check/code), use control flow integrity, add random delay.
+
+

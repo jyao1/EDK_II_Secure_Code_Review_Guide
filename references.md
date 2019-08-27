@@ -111,6 +111,10 @@
 
 [Boone CSW 2018] TPM Genie, [https://github.com/nccgroup/TPMGenie/blob/master/docs/CanSecWest_2018_-_TPM_Genie_-_](https://github.com/nccgroup/TPMGenie/blob/master/docs/CanSecWest_2018_-_TPM_Genie_-_Jeremy_Boone.pdf)[Jeremy_Boone.pdf](https://github.com/nccgroup/TPMGenie/blob/master/docs/CanSecWest_2018_-_TPM_Genie_-_Jeremy_Boone.pdf)
 
+[Giller BH 2015] Implementing Practical Electrical Glitching Attacks,[https://www.blackhat.com/docs/eu-15/materials/eu-15-Giller-Implementing-Electrical-Glitching-Attacks.pdf](https://www.blackhat.com/docs/eu-15/materials/eu-15-Giller-Implementing-Electrical-Glitching-Attacks.pdf)
+
+[Timmers BH 2018] There will be Glitches, [http://i.blackhat.com/us-18/Wed-August-8/us-18-Milburn-There-Will-Be-Glitches-Extracting-And-Analyzing-Automotive-Firmware-Efficiently.pdf](http://i.blackhat.com/us-18/Wed-August-8/us-18-Milburn-There-Will-Be-Glitches-Extracting-And-Analyzing-Automotive-Firmware-Efficiently.pdf)
+
 [Brossard DC 2008] Bypassing Pre-boot Authentication Passwords, [https://](https://www.defcon.org/images/defcon-16/dc16-presentations/brossard/defcon-16-brossard-wp.pdf)[www.defcon.org/images/defcon-16/dc16-presentations/brossard/defcon-16-brossard-wp.pdf](https://www.defcon.org/images/defcon-16/dc16-presentations/brossard/defcon-16-brossard-wp.pdf)
 
 [Miller BH 2011] Battery Firmware Hacking, [https://media.blackhat.com/bh-us-11/Miller/BH_US_11_Miller_Battery_Firmware_Public_Slides.pdf](https://media.blackhat.com/bh-us-11/Miller/BH_US_11_Miller_Battery_Firmware_Public_Slides.pdf)
