@@ -145,6 +145,8 @@
 
 [Cui BH 2011] Print me if you dare,[https://academiccommons.columbia.edu/doi/10.7916/D8QJ7RG3](https://academiccommons.columbia.edu/doi/10.7916/D8QJ7RG3)
 
+[FailOverflow 2010] PS3 Epic Fail [https://www.cs.cmu.edu/~dst/GeoHot/1780_27c3_console_hacking_2010.pdf](https://www.cs.cmu.edu/~dst/GeoHot/1780_27c3_console_hacking_2010.pdf)
+
 [Perigaud ZeroNight 2018] Turning your BMC into a revolving door,[https://airbus-seclab.github.io/ilo/ZERONIGHTS2018-Slides-EN-Turning_your_BMC_into_a_revolving_door-perigaud-gazet-czarny.pdf](https://airbus-seclab.github.io/ilo/ZERONIGHTS2018-Slides-EN-Turning_your_BMC_into_a_revolving_door-perigaud-gazet-czarny.pdf)
 
 [Domas BH 2018] God Mode Unlocked Hardware Backdoors in X86 CPUs, http://i.blackhat.com/us-18/Thu-August-9/us-18-Domas-God-Mode-Unlocked-Hardware-Backdoors-In-x86-CPUs.pdf

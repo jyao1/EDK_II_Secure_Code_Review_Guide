@@ -45,6 +45,36 @@ In [2011](https://academiccommons.columbia.edu/doi/10.7916/D8QJ7RG3), Cui demons
 
 All of the cases above demonstrate the need for firmware locking and authenticated updates.
 
+In [2010 27C3](https://academiccommons.columbia.edu/doi/10.7916/D8QJ7RG3), FailOverflow disclosed an issue in Sony Playstation 3 ECDSA code. The random number is NOT identical. As such the private key can be calculated.
+
+
+```
+def generate_ecdsa(k, sha):
+  k = bytes_to_long(k)
+  e = bytes_to_long(sha)
+  m = open("/dev/random","rb").read(30) # Here call random function
+  if len(m) != 30:
+  raise Exception(“Failed to get m”)
+  m = bytes_to_long(m) % ec_N
+  r = (m * ec_G).x.tobignum() % ec_N
+  kk = ((r * k) + e) % ec_N
+  s = (bn_inv(m, ec_N) * kk) % ec_N
+  r = long_to_bytes(r, 30)
+  s = long_to_bytes(s, 30)
+  return r,s
+```
+
+But the random function is implemented:
+
+```
+int getRandomNumber()
+{
+  return 4;
+}
+```
+
+The random number must be generated in a cryptographically secure way. A hardware random number generator should be used if it is available.
+
 In [ZeroNight 2018](https://airbus-seclab.github.io/ilo/ZERONIGHTS2018-Slides-EN-Turning_your_BMC_into_a_revolving_door-perigaud-gazet-czarny.pdf), researches disclosed broken logic in signature verification in BMC firmware.
 
 See below code. load_legacy_key expects 1 as index for public key and fails otherwise. load_signature returns with success code if load_legacy_key failed for index2. Signatures felds are left untouched. As such, the attacker may update sig1 feld with hash value calculated and bypass the signature verification.
@@ -81,3 +111,4 @@ FUCK_YEAH:
 
 
 Care must be taken to make sure the signature verification always happening, espcially for the legacy logic.
+
